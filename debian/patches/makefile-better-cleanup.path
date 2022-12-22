@@ -1,0 +1,15 @@
+Description: do not remove debian dir
+ upstream Makefile tries to remove too much
+Author: Gustavo Panizzo <gfa@zumbi.com.ar>
+Last-Update: 2015-07-29
+--- a/Makefile
++++ b/Makefile
+@@ -52,7 +52,7 @@
+ 	@rm -rf html
+ 
+ distclean: clean
+-	rm -f .[^.]* */.[^.]*
++	#rm -f .[^.]* */.[^.]*
+ 	rm -f *~ */*~ *.orig */*.orig */*.rej *.rej 
+ 
+ depend: .depend

@@ -1,0 +1,13 @@
+Description: do not override CFLAGS
+ Do not override CFLAGS so dpkg-buildflags works
+Author: Jeremías Casteglione <debian@jrms.com.ar>
+Last-Update: 2015-03-27
+--- a/Makefile
++++ b/Makefile
+@@ -1,5 +1,5 @@
+ # these can (and should) be overridden on the make command line for production
+-CFLAGS := -std=gnu99
++CFLAGS += -std=gnu99
+ # these are used for the benchmarks in addition to the normal CFLAGS. 
+ # Normally no need to overwrite unless you find a new magic flag to make
+ # STREAM run faster.

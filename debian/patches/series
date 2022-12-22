@@ -1,0 +1,9 @@
+spell-fix-in-manpage.patch
+makefile-cflags.patch
+debian-paths.patch
+makefile-better-cleanup.path
+abd1802c58d40cd99c69a0f3c10041c0c2b1bd55.patch
+fix-build-for-no-NR-migrate-pages.patch
+systemd-read-defaults-file
+cf6c2c029edc9c288122bcd603a72eb7f6d042d2.patch
+lp-1832915-fix-sparse-node-ids.patch

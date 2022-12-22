@@ -1,0 +1,22 @@
+From: Geert Nijpels <geert.nijpels@gmail.com>
+Date: Wed, 23 Nov 2016 15:00:17 +0100
+Subject: numad doesn't read /etc/default/numad
+Reviewed-by: Jeremías Casteglione <debian@jrms.com.ar>
+
+Index: numad/numad.service
+===================================================================
+--- numad.orig/numad.service
++++ numad/numad.service
+@@ -3,10 +3,9 @@ Description=numad - The NUMA daemon that
+ Documentation=man:numad
+ 
+ [Service]
++EnvironmentFile=-/etc/default/numad
+ Type=forking
+-ExecStart=/usr/bin/numad -i 15
++ExecStart=/usr/bin/numad $DAEMON_ARGS -i 15
+ 
+ [Install]
+ WantedBy=multi-user.target
+-
+-

@@ -1,0 +1,11 @@
+# Defaults for numad initscript
+# sourced by /etc/init.d/numad
+# installed at /etc/default/numad by the maintainer scripts
+
+#
+# start numad in daemon mode from init.d script?
+# to disable the start of numad, comment out the next line.
+NUMAD_ENABLE=true
+
+# Additional options that are passed to the Daemon.
+DAEMON_ARGS=""

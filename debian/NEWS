@@ -1,0 +1,7 @@
+numad (0.5+20150602-3) unstable; urgency=medium
+
+  Starting or stopping the 'numad' daemon while running a large virtual
+  machine may be dangerous so installing (or removing) this package won't
+  start (or stop) it.
+
+ -- Kamal Mostafa <kamal@whence.com>  Tue, 08 Sep 2015 12:57:48 -0700

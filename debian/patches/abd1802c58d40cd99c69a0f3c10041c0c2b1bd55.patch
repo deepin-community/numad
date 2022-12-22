@@ -1,0 +1,19 @@
+commit abd1802c58d40cd99c69a0f3c10041c0c2b1bd55
+Author: Jan Synacek <jsynacek@redhat.com>
+Date:   Wed Jun 3 08:45:43 2015 +0200
+
+    don't confuse daemon() with quotes
+
+diff --git a/numad.init b/numad.init
+index 053bb07..9ccf892 100755
+--- a/numad.init
++++ b/numad.init
+@@ -37,7 +37,7 @@ start() {
+     [ -f $config ] || exit 6
+     echo -n $"Starting $prog: "
+     . $config
+-    daemon "$exec -i $INTERVAL"
++    daemon $exec -i $INTERVAL
+     retval=$?
+     echo
+     [ $retval -eq 0 ] && touch $lockfile

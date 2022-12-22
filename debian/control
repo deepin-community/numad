@@ -1,0 +1,20 @@
+Source: numad
+Section: admin
+Priority: optional
+Maintainer: gustavo panizzo <gfa@zumbi.com.ar>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://pagure.io/numad
+Vcs-Git: https://salsa.debian.org/debian/numad.git
+Vcs-Browser: https://salsa.debian.org/debian/numad
+Rules-Requires-Root: no
+
+Package: numad
+Architecture: linux-any
+Depends: ${shlibs:Depends},${misc:Depends},systemd-sysv | cgmanager,lsb-base (>= 3.2-14)
+Description: User-level daemon that monitors NUMA topology and usage
+ Numad is a system daemon that monitors NUMA topology and usage. It will attempt
+ to locate processes for optimum NUMA locality and affinity, dynamically
+ adjusting to changing system conditions. Numad also provides guidance to assist
+ management applications with initial manual binding of CPU and memory resources
+ for their processes.

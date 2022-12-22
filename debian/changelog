@@ -1,0 +1,72 @@
+numad (0.5+20150602-7) unstable; urgency=medium
+
+  * [593b9b] remove Jeremías and Kamal from the maintainer and upload fields
+    thank you both for your work on numad
+    (Closes: #976328)
+  * [157e85] increase standards version to 4.5.1
+
+ -- gustavo panizzo <gfa@zumbi.com.ar>  Sat, 06 Feb 2021 10:03:56 +0000
+
+numad (0.5+20150602-6) unstable; urgency=medium
+
+  [ Christian Ehrhardt ]
+  * d/p/lp-1832915-fix-sparse-node-ids.patch: fix a crash on ppc64el
+    (LP: #1832915)(Closes: #930725)
+
+  [ gustavo panizzo ]
+  * [0b4115] add patch from upstream repo
+  * [d97937] update homepage
+  * [1b3223] update vcs-* urls to point to salsa.d.o
+  * [767be9] do not require root to build
+  * [b6b360] use the latest debhelper-compat
+  * [2eee3c] guessing a debian/watch file
+  * [cecd01] update the d/gbp.conf file
+  * [953d8c] increase standards version to 4.5.0
+  * [094901] remove trailing spaces and comments from d/rules
+  * [a267dd] use a secure uri for the copyright format
+  * [577311] install a logrotate file
+  * [47d07d] no longer install upstream changelog
+
+ -- gustavo panizzo <gfa@zumbi.com.ar>  Fri, 20 Nov 2020 22:22:20 +0000
+
+numad (0.5+20150602-5.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Update Build-Depends to use debhelper (>= 9.20160709) instead of
+    dh-systemd. (Closes: #958630)
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 25 Sep 2020 13:31:42 +0200
+
+numad (0.5+20150602-5) unstable; urgency=medium
+
+  * fix systemd doesn't read /etc/default/numad (Closes: #845447)
+    patch by Geert Nijpels <geert.nijpels@gmail.com>
+
+ -- Jeremías Casteglione <debian@jrms.com.ar>  Fri, 25 Nov 2016 18:44:08 +0000
+
+numad (0.5+20150602-4) unstable; urgency=medium
+
+  * fix init script DAEMON path (Closes: #810113)
+  * fix default init script var name
+    both patches by Tom Downes <downes@uwm.edu>
+
+ -- Jeremías Casteglione <debian@jrms.com.ar>  Mon, 11 Jan 2016 19:39:53 -0300
+
+numad (0.5+20150602-3) unstable; urgency=medium
+
+  * debian/NEWS instead of debconf: (Closes: #797859)
+
+ -- Jeremías Casteglione <debian@jrms.com.ar>  Wed, 16 Sep 2015 21:18:28 -0300
+
+numad (0.5+20150602-2) unstable; urgency=medium
+
+  * fix build for platforms with no __NR_migrate_pages syscall
+
+ -- Kamal Mostafa <kamal@whence.com>  Tue, 01 Sep 2015 13:17:01 -0700
+
+numad (0.5+20150602-1) unstable; urgency=low
+
+  * Initial release (Closes: #776826)
+  * Package git snapshot.
+
+ -- Jeremías Casteglione <debian@jrms.com.ar>  Thu, 12 Feb 2015 20:54:12 +0000

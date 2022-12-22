@@ -1,0 +1,14 @@
+Description: install binaries on debian paths
+Author: Gustavo Panizzo <gfa@zumbi.com.ar>
+Last-Update: 2015-07-29
+--- a/Makefile
++++ b/Makefile
+@@ -26,7 +26,7 @@
+ 
+ SOURCES := numad.c
+ 
+-prefix := /usr
++prefix := $(DESTDIR)/usr
+ docdir := ${prefix}/share/doc
+ 
+ all: numad
